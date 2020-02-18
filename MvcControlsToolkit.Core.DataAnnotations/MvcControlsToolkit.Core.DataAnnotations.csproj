@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <Version>3.1.0-rc1</Version>
+    <Authors>Francesco Abbruzzese; Mvcct Team</Authors>
+    <Company>Mvcct Team</Company>
+    <PackageIcon>icon.jpg</PackageIcon>
+    <PackageIconUrl />
+    <Description>Mvc Controls Toolkit data annotations</Description>
+    <Copyright>Mvcct Team</Copyright>
+    <PackageTags>aspnetcore;blazor</PackageTags>
+    <PackageReleaseNotes>Data annotations factored out from MvcControlsToolkit.Core.Business. Updated dependencies to .NetStandardLibrary 2.1 and MvcControlsToolkit.Core.DataAnnotations 4.7</PackageReleaseNotes>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>https://github.com/MvcControlsToolkit/Home/blob/master/LICENSE.txt</PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\tools\icon.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
