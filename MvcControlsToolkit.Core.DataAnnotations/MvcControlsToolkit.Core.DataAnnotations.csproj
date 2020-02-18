@@ -18,6 +18,8 @@
     <PackageLicenseExpression>https://github.com/MvcControlsToolkit/Home/blob/master/LICENSE.txt</PackageLicenseExpression>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/MvcControlsToolkit/MvcControlsToolkit.Core.DataAnnotations</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MvcControlsToolkit/MvcControlsToolkit.Core.DataAnnotations.git</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
